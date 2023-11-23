@@ -3830,15 +3830,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionName: GetPatient
   cost: 1
-  target: {fileID: 1000317771}
+  target: {fileID: 0}
   targetTag: 
   duration: 0
   preConditions:
   - key: Waiting
-    value: 0
+    value: 2
   afterEffects:
   - key: treatPatient
-    value: 0
+    value: 2
   agent: {fileID: 0}
   running: 0
 --- !u!114 &1618912318
