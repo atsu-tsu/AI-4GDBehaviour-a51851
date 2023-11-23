@@ -5,12 +5,10 @@ using System.Linq;
 
 public class SubGoal {
 
-    // Dictionary to store our goals
     public Dictionary<string, int> sGoals;
-    // Bool to store if goal should be removed
     public bool remove;
 
-    // Constructor
+    
     public SubGoal(string s, int i, bool r) {
 
         sGoals = new Dictionary<string, int>();
@@ -23,6 +21,7 @@ public class GAgent : MonoBehaviour {
 
     public List<GAction> actions = new List<GAction>();
     public Dictionary<SubGoal, int> goals = new Dictionary<SubGoal, int>();
+    public GInventory inventory=new GInventory();
     public WorldStates beliefs=new WorldStates();
 
     GPlanner planner;
@@ -30,7 +29,6 @@ public class GAgent : MonoBehaviour {
     public GAction currentAction;
     SubGoal currentGoal;
 
-    // Start is called before the first frame update
     public void Start() 
     {
 
